@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  background-color: #3494e4;
+
+  color: #fff;
+
+  font-family: 'Montserrat', sans-serif;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-bottom: 40px;
+
+}
+
+
+
+h1 {
+
+  margin: 20px 0 0;
+
+}
+
+
+
+h3 {
+
+  font-weight: 400;
+
+  margin: 10px 0;
+
+}
+
+/* We will be using the flex horizontaly, so we can take out the flex-direction column */
+/* We need to centralize the divs that go inside*/
+.length {
+
+  background: #fff;
+
+  border: 4px solid #b61b6e;
+
+  color:  #b61b6e;
+
+  border-radius: 5px;
+
+  height: 60px;
+
+  width: 1000px;
+
+  margin: 30px 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+}
+
+
+
+.length.length-small {
+
+  height: 30px;
+
+  width: 100px;
+
+  border-radius: 5px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+
+  cursor: pointer;
+
+  font-size:12px;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  margin: 2px;
+
+  transition: 0.3s ease;
+
+}
+
+
+
+.length.length-small.full {
+
+  background: #a9cefe;
+
+  color: #fff;
+
+}
+
+
+
+.lengths {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 600px;
+
+}
+
+
+.remained {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex: 1;
+
+  transform: 0.3s ease;
+
+}
+
+
+
+.remained span {
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+}
+
+
+
+.remained small {
+
+  font-size: 12px;
+
+}
+
+/* The class is percentage without the s */
+/* As we are working horizontaly we have a height we do not have a width */
+
+.percentage{
+
+  background-color: #a9cefe;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-weight: bold;
+
+  font-size: 12px;
+
+  width: 0px;
+
+  height: 60px;
+
+  transform: 0.3s ease;
+
+}
+
+
+
+.text {
+
+  text-align: center;
+
+  margin: 0 0 5px;
+
+}
+
