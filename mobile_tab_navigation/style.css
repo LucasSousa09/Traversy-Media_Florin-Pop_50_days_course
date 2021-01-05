@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    
+    font-family: "Open Sans", sans-serif;
+
+    background-color: rgba(155, 89, 182, 0.7);
+}
+
+.c-phone{
+    position: relative;
+
+    height: 600px;
+    width: 340px;
+
+    border: 3px solid #eee;
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.c-phone__content{
+    position: absolute;
+    top:0;
+    left:0;
+
+    height:calc(100% - 60px);
+    width: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.c-phone__content.is-shown{
+    opacity: 1;
+}
+
+.c-phone__nav{
+    position: absolute;
+    bottom: 0;
+    left:0;
+
+    margin-top: -5px;
+    width: 100%;
+}
+
+.c-phone__ul{
+    background-color: #fff;
+    display: flex;
+    
+    height: 60px;
+
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+}
+
+.c-phone__li{
+    color: #777;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.c-phone__p{
+    font-size: 12px;
+    margin: 2px 0;
+}
+
+.c-phone__li:hover, .c-phone__li.is-active{
+    color: #8e44ed;
+}
