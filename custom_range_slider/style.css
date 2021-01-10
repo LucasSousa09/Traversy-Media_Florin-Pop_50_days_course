@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap');
+
+:root{
+    --width: 350px
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    overflow:hidden;
+    
+    font-family: "Lato", sans-serif;
+
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #7787dd 100% )
+}
+
+h2{
+    position: absolute;
+    top: 10px;
+}
+
+.range-container{
+    position: relative;
+}
+
+input[type='range'] {
+    width: var(--width);
+    margin: 18px 0;
+
+    -webkit-appearance: none;
+
+    cursor: pointer;
+
+    background: transparent;
+}
+/* 
+.test-bar{
+    height: 24px;
+    width: 24px;
+
+    border-radius: 50%;
+
+    background-color: #333;
+} */
+/* 
+.vertical-testbar{
+    height: 100px;
+    width: 20px;
+
+    background-color: #333;
+
+    opacity: 0.2;
+} */
+
+
+
+input[type='range']:focus {
+    outline: none;
+}
+
+input[type='range'] + label{
+    position: absolute;
+    top: -25px;
+    left: 110px;
+
+    width: 80px;
+
+    padding: 5px 0;
+
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+
+    background-color: #fff5e2;
+
+    text-align: center;
+}
+
+/* Chrome and Safari */
+
+input[type='range']::-webkit-slider-runnable-track{
+    border-radius: 5px;
+
+    background: #b670d1;
+
+    height: 10px;
+}
+
+input[type='range']::-webkit-slider-thumb{
+    -webkit-appearance: none;
+
+    height: 24px;
+    width: 24px;
+
+    margin-top: -7px;
+
+    background: #fff5e2;
+    
+    border-radius: 50%;
+}
+
+ /* Firefox */
+
+ input[type='range']::-moz-range-track{
+    border-radius: 5px;
+
+    background: #b670d1;
+
+    height: 10px;
+}
+
+input[type='range']::-moz-range-thumb{
+    -webkit-appearance: none;
+
+    height: 24px;
+    width: 24px;
+
+    margin-top: -7px;
+
+    background: #fff5e2;
+    
+    border-radius: 50%;
+}
+
+/* IE */
+
+input[type='range']::-ms-track{
+    border-radius: 5px;
+
+    background: #b670d1;
+
+    height: 10px;
+}
+
+input[type='range']::-ms-thumb{
+    -webkit-appearance: none;
+
+    height: 24px;
+    width: 24px;
+
+    margin-top: -7px;
+
+    background: #fff5e2;
+    
+    border-radius: 50%;
+}
+
