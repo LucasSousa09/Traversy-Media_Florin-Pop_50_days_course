@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    overflow:hidden;
+    
+    font-family: "Press Start 2P", sans-serif;
+    text-align: center;
+
+    background-color: #8da1fc;
+    color: #fff;
+}
+
+a{
+    color: #fff;
+}
+
+h1{
+    line-height: 1.4;
+}
+
+.btn{
+    border: 0;
+    background-color:#fff;
+    color: #8da1fc;
+
+    padding: 15px 20px;
+    font-family: inherit;
+
+    cursor: pointer;
+}
+.btn:focus{
+    outline: none;
+    background-color: #4f6fff;
+    color:#fff;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+.screen{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+    height: 100vh;
+    width: 100vw;
+
+    transition: margin 0.5s ease-out;
+}
+
+.screen.up{
+    margin-top: -100vh;
+}
+
+.languages-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+
+    list-style-type: none;
+
+    padding: 0;
+}
+
+.languages-list li{
+    margin: 10px;
+}
+
+.choose-language-btn{
+    background-color: transparent;
+    color: #fff;
+
+    border: 2px solid #fff;
+    font-family: inherit;
+
+    cursor: pointer;
+
+    width: 150px;
+    height: 150px;
+}
+
+.choose-language-btn:hover{
+    background-color: #fff;
+    color:#4f6fff;
+}
+.choose-language-btn:active{
+    background-color: rgba(255,255,255,0.7)
+}
+
+.choose-language-btn img{
+    width: 100px;
+    height: 100px;
+
+    object-fit: contain;
+}
+
+.game-container{
+    position: relative;
+}
+
+.time, .score{
+    position: absolute;
+    top: 20px;
+}
+
+.time{
+    left: 20px;
+}
+
+.score{
+    right: 20px;
+}
+
+.message{
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    background-color: rgba(0,0,0,0.5);
+
+    width: 100%;
+    padding: 20px;
+
+    text-align: center;
+    opacity: 0;
+
+    transform: translate(-50%, -150%);
+    transition: transform 0.4s ease-in;
+    z-index: 100;
+}
+
+.message.visible{
+    opacity: 1;
+
+    transform: translate(-50%, 150%);
+}
+
+.language{
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.language.caught{
+    transform: translate(-50%,-50%) scale(0)
+}
+
+.language img{
+    width: 100%;
+    height: 100%;
+}
